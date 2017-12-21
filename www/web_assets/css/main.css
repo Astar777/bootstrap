@@ -1,0 +1,137 @@
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	html,
+	body {
+		height: 100%;
+		background-color: #fafafa;
+	}
+	li{list-style: none;}
+	/*导航*/
+	
+	#nav {
+		margin: 0;
+		position: fixed;
+		z-index: 2;
+	}
+	
+	.brand {
+		max-height: 100%;
+	}
+	
+	.btn1 {
+		font-weight: bold;
+	}
+	
+	#smlbtn,
+	#search {
+		max-height: 30px;
+		padding: 0;
+		border: hidden;
+	}
+	/*导航条mouseover显示效果*/
+	
+
+	
+	.list {
+		display: none;
+		position: fixed;
+		width: 10%;
+		max-height: 4%;
+		margin-top: 0;
+	}
+	
+	/*下拉列表*/
+	
+
+	
+	#down {
+		float: right;
+		position: absolute;
+		z-index: 1;
+		overflow-y:scroll;
+		overflow-x: hidden;
+		right: 0;
+		height: 100%;
+	}
+	
+	#sec {
+		margin-left: 10px;
+		width: 100%;
+		background-color: #FAFAFA;
+		box-shadow: 0 -2px 5px -1px #802d7d;
+	}
+
+	#sec li{margin-top: 20px;}
+	#sec a{color: #000000;font-weight: bold;}
+		.line {
+		position: relative;
+		height: 2px;
+		margin-left: 8px;
+	}
+	
+	/*buy的遮罩层*/
+	
+	.buy {
+		z-index: 1;
+		position: fixed;
+		width: 100%;
+		background-color: #EEEEEE;
+		box-shadow: 0 0 150px 45px black;
+		padding-top: 20px;
+	}
+	
+	.buy .right {
+		box-shadow: -5px 0 5px -5px darkgray;
+	}
+	
+	.buy .container {
+		margin-left: 30px;
+		margin-top: 0;
+		width: 100%;
+	}
+	
+	.buy_sml {
+		max-width: 100%;
+		margin-bottom: 20px;
+		padding-top: 40px;
+	}
+	
+	.buy .line {
+		opacity: 0.3;
+		width: 20%;
+	}
+	
+	.container ul {
+		display: block;
+		margin-top: 30px;
+		font-weight: bold;
+	}
+	
+	.buy button {
+		width: 120px;
+		height: 38px;
+		color: white;
+		background-color: black;
+		margin-bottom: 40px;
+		border: none;
+	}
+	
+	.buy a:link {
+		color: black;
+	}
+	
+	.buy a:hover {
+		color: red;
+	}
+	
+	p {
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+	
+	.buy li {
+		margin-bottom: 10px;
+	}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--保证屏幕可以缩放-->
+		<title>nav</title>
+		<!-- Bootstrap -->
+		<link href="web_assets/css/vendor/bootstrap.min.css" rel="stylesheet">
+		<link href="web_assets/css/main.css" rel="stylesheet">
+		<link href="web_assets/images/favicon.ico" rel="icon" type="image/png">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	</head>
+
+	<body style="background-color: #FAFAFA;">
+
+		<!--nva-->
+
+		<div class="navbar navbar-default  navbar-fixed-top" id="nav" role="navigation">
+			<!--左边两个始终存在的brand-->
+			<div class="navbar-header " style="float: left;">
+
+				<a href="##" style="padding: 10px;" class="navbar-brand"><img class="brand" src="web_assets/images/brandThree.png" /></a>
+				<a href="##" style="padding: 10px;" class="navbar-brand"><img class="brand" src="web_assets/images/brandBorder.png" /></a>
+			</div>
+
+			<!--需要折叠的搜索框-->
+			<div class="navbar-responsive-collapse hidden-xs" style="padding: 0;float: right;">
+				<a class=" navbar-brand navbar-right hidden-xs" href="##" style="padding: 0;"><img class="brand" src="web_assets/images/searchBg.png" /></a>
+			</div>
+			<!--需要折叠的三个标签+下拉菜單-->
+			<div class="navbar-responsive-collapse " style="padding: 0;margin-left: 65px;width: 50%;margin-right: 0;">
+				<!--三个标签-->
+				<ul class="nav navbar-nav hidden-xs" id="fir">
+					<li>
+						<a class="btn1" id="buy_button" href="##">&nbsp;&nbsp;BUY&nbsp;&nbsp;</a><img class="list" src="web_assets/images/listHoverBg.png" /></li>
+					<li>
+						<a class="btn1" href="##">TRAVEL</a><img class="list" src="web_assets/images/listHoverBg.png" /></li>
+					<li>
+						<a class="btn1" href="##">SUPPORTS</a><img class="list" src="web_assets/images/listHoverBg.png" /></li>
+				</ul>
+
+			</div>
+			<!--两个xs出现的button + 始终存在的brand-->
+			<div class="navbar-header " style="float: right;">
+
+				<button id="smlbtn"  class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <img style="max-height: 30px;" class="brand" src="web_assets/images/drop.png"/>
+       </button>
+
+				<button id="search" class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+         <img style="max-height: 30px;" class="brand" src="web_assets/images/big.png"/>
+
+       </button>
+
+				<a style="padding: 10px;" class=" navbar-brand navbar-right" href="##"><img class="brand" src="web_assets/images/world.png" /></a>
+				<a style="padding: 10px;" class=" navbar-brand navbar-right" href="##"><img class="brand" src="web_assets/images/brand.png" /></a>
+
+			</div>
+			<!--div class="navbar-header "-->
+
+		</div>
+		</div>
+
+		<!--手机端下拉菜单-->
+		<div  id="down" style=" padding: 0;margin-top: 10px;margin-left:-5px;display: none;width:100%">
+
+			<ul class="nav navbar-nav visible-xs-block" id="sec" style="border: none;margin: 0;margin-top: 24px;">
+
+				<div style="margin: 10px;box-shadow: 0 7px 5px -2px gainsboro;line-height: 40px;"><img style="height: 30px;margin-left:10px;" src="web_assets/images/brand.png" />
+					<strong>&nbsp;&nbsp;&nbsp;Login</strong>
+					<span class="close" style="display: inline-block;position: absolute;float: right;right: 10px;font-size: 20px;line-height: 40px;">&times;</span>
+				</div>
+				<li>
+					<a href="##"><strong>BUY</strong></a><img style="width: 15%;" class="line" src="web_assets/images/titleBoder.png" />
+					<ul class="navbar-nav">
+
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone & Device</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plan</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepaid</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Exclusive</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="##"><strong>TRAVEL</strong></a><img style="width: 22%;" class="line" src="web_assets/images/titleBoder.png" />
+					<ul class="navbar-nav">
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pre Travel</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call Overseas</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Services</a>
+						</li>
+				</li>
+				<li>
+					<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Exclusive</a>
+				</li>
+				</ul>
+				</li>
+				<li>
+					<a href="##"><strong>SUPPORTS</strong></a><img class="line" style="width: 25%;" src="web_assets/images/titleBoder.png" />
+					<ul class="navbar-nav">
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Top Up</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All VAS Search</a>
+						</li>
+						<li>
+							<a href="##">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Exclusive</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+
+		<!--遮罩层buy-->
+		<div class="buy hidden-xs" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-md-3 clo-lg-3">
+						<img class="buy_sml" src="web_assets/images/getNew.png" />
+						<p>Phone & Device</p>
+						<img class="line" src="web_assets/images/titleBoder.png" />
+						<ul>
+							<li>iPhone</li>
+							<li>Smart Phones</li>
+							<li>Product</li>
+
+						</ul>
+					</div>
+					<div class="col-sm-3 col-md-3 clo-lg-3">
+						<img class="buy_sml" src="web_assets/images/travel.png" />
+						<p>Plan</p>
+						<img class="line" src="web_assets/images/titleBoder.png" />
+						<ul>
+							<li>Monthy Plan</li>
+							<li>Data Top Up</li>
+							<li>All VAS Search</li>
+
+						</ul>
+						<button style="margin-top: 80px;">View all</button>
+
+					</div>
+					<div class="col-sm-3 col-md-3 clo-lg-3">
+						<img class="buy_sml" src="web_assets/images/recharge.png" />
+						<p>Prepaid</p>
+						<img class="line" src="web_assets/images/titleBoder.png" />
+						<ul>
+							<li>Local SIM</li>
+							<li>3Gamer SIM</li>
+							<li>Roaming SIM</li>
+							<li>1-Card-Multi-Number</li>
+						</ul>
+						<button style="margin-top: 50px;">View all</button>
+					</div>
+					<div class="col-sm-3 col-md-3  clo-lg-3 right" style="margin: 0;height: 100%;">
+						<p style="padding-top:20px ;">Trending Offers...</p>
+						<ul style="margin-top: 20px;font-size: 0.8em;">
+							<li>Data Top Up</li>
+							<li>Gamers</li>
+							<li>3Reward</li>
+							<li style="font-weight: normal;"><i>Frequently Visited Link2</i></li>
+						</ul>
+						<img style="width: 15%;margin: 25px 0 25px 0;display: block;" class="line" src="web_assets/images/titleBoder.png" />
+						<p style="margin-top: 70px;">Online Exclusive</p>
+						<img style="max-width: 88%;" class="buy_sml" src="web_assets/images/appleWatch.png" />
+						<a style="display: block;padding-bottom: 30px;" href="#">View All Deals</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--主图-->
+		<img id="com_img" class="hidden-xs img-responsive" alt="Responsive image" style="margin-top: 20px;" src="web_assets/images/pcContent.png" />
+		<img id="phone_img" class="visible-xs img-responsive" alt="Responsive image" style="margin-top: 20px;" src="web_assets/images/mobile_content.png" />
+
+		<script src="web_assets/js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="web_assets/js/main.js"></script>
+		<script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+
+</html>
